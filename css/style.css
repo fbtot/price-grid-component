@@ -1,17 +1,23 @@
-@use "sass:color";
-@use "_variables" as *;
+body {
+  width: 375px;
+}
+
+.component-container {
+  width: 310px;
+  margin: 72px auto;
+}
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-size: $base-font-size-small;
+  font-size: 14.7px;
 }
 
 body {
-  font-family: $font-family;
-  background: $light-gray;
+  font-family: "Karla", sans-serif;
+  background: #e5eff5;
 }
 
 h1 {
@@ -27,28 +33,22 @@ h2 {
   background: white;
 }
 
-.box {
+.box, .box--darker, .box--dark, .box--light {
   padding: 0.9rem 1.6rem;
 }
 
-.box--light {
-  @extend .box;
-}
-
 .box--dark {
-  @extend .box;
-  background: transparentize($cyan, 0.2);
+  background: rgba(42, 178, 175, 0.8);
 }
 
 .box--darker {
-  @extend .box;
-  background: $cyan;
+  background: #2ab2af;
 }
 
 .box__subtitle {
   font-size: 1rem;
   font-weight: 700;
-  color: $bright-yellow;
+  color: #c0df34;
   margin-bottom: 1.5rem;
 }
 
@@ -57,3 +57,5 @@ h2 {
   font-size: 0.95rem;
   letter-spacing: -0.01em;
 }
+
+/*# sourceMappingURL=style.css.map */
