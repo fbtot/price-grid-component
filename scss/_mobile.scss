@@ -37,6 +37,12 @@ ul {
 li {
   @extend %reset-list;
 }
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
 .button {
   display: block;
@@ -61,6 +67,7 @@ li {
   overflow: hidden;
   border-radius: 0.3rem;
   box-shadow: 0 2rem 4rem rgba($grayish-blue, 0.6);
+  width: 310px;
 }
 
 .box {
