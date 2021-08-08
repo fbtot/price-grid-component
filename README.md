@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/price-grid-component-with-scss-and-flexbox-LQr_mREI9)
+- [Live site](https://filippo-b.github.io/price-grid-component/)
 
 ## My process
 
