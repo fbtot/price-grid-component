@@ -31,18 +31,13 @@
     }
   }
 
-  .box {
-    padding: 1.2rem 3.2rem 1.2rem 2.5rem;
-  }
-
   .box--light {
-    @extend .box;
+    padding: 1.2rem 3.2rem 1.1rem 2.5rem;
     margin-bottom: 1.1rem;
   }
 
   .box--dark,
   .box--darker {
-    @extend .box;
     padding: 1.4rem 2.5rem 2.3rem;
   }
 
