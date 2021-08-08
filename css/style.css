@@ -1,3 +1,13 @@
+p, .box__content, .box__price, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  text-indent: 0;
+  list-style-type: none;
+}
+
 body {
   width: 375px;
 }
@@ -9,6 +19,8 @@ body {
 
 * {
   box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -27,18 +39,49 @@ h1 {
 h2 {
   font-size: 1.3rem;
   margin-bottom: 1.8rem;
+  color: #2ab2af;
+}
+
+.button, .box__button {
+  display: block;
+  background: #c0df34;
+  color: #e5eff5;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.25);
+  font-size: 1.1rem;
+}
+.button:hover, .box__button:hover {
+  background: #afcf20;
 }
 
 .component-container {
   background: white;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  box-shadow: 0 2rem 4rem rgba(152, 166, 189, 0.6);
 }
 
 .box, .box--darker, .box--dark, .box--light {
   padding: 0.9rem 1.6rem;
 }
 
+.box--light {
+  padding-bottom: 2.2rem;
+}
+
+.box--dark,
+.box--darker {
+  color: #e5eff5;
+  padding-top: 0.5rem;
+  padding-bottom: 1.7rem;
+}
+
 .box--dark {
-  background: rgba(42, 178, 175, 0.8);
+  background: rgba(42, 178, 175, 0.95);
 }
 
 .box--darker {
@@ -56,6 +99,33 @@ h2 {
   line-height: 1.8em;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
+  color: #98a6bd;
+}
+
+.box__title--light {
+  margin-bottom: 1.4rem;
+}
+
+.box__price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+  margin-bottom: 0.8rem;
+}
+.box__price span {
+  font-size: 1.1rem;
+  margin-left: 0.7em;
+  font-weight: normal;
+}
+
+.box__catch {
+  margin-bottom: 2.1rem;
+}
+
+.box__list {
+  line-height: 1.35em;
 }
 
 /*# sourceMappingURL=style.css.map */

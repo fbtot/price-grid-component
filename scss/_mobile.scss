@@ -3,6 +3,8 @@
 
 * {
   box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -21,10 +23,43 @@ h1 {
 h2 {
   font-size: 1.3rem;
   margin-bottom: 1.8rem;
+  color: $cyan;
+}
+
+p {
+  @extend %m0p0;
+}
+
+ul {
+  @extend %reset-list;
+}
+
+li {
+  @extend %reset-list;
+}
+
+.button {
+  display: block;
+  background: $bright-yellow;
+  color: $light-gray;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.25);
+  font-size: 1.1rem;
+
+  &:hover {
+    background: darken($bright-yellow, 7%);
+  }
 }
 
 .component-container {
   background: white;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  box-shadow: 0 2rem 4rem rgba($grayish-blue, 0.6);
 }
 
 .box {
@@ -33,11 +68,19 @@ h2 {
 
 .box--light {
   @extend .box;
+  padding-bottom: 2.2rem;
+}
+
+.box--dark,
+.box--darker {
+  color: $light-gray;
+  padding-top: 0.5rem;
+  padding-bottom: 1.7rem;
 }
 
 .box--dark {
   @extend .box;
-  background: transparentize($cyan, 0.2);
+  background: transparentize($cyan, 0.05);
 }
 
 .box--darker {
@@ -53,7 +96,41 @@ h2 {
 }
 
 .box__content {
+  @extend %m0p0;
   line-height: 1.8em;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
+  color: $grayish-blue;
+}
+
+.box__title--light {
+  margin-bottom: 1.4rem;
+}
+
+.box__price {
+  @extend %m0p0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+  margin-bottom: 0.8rem;
+
+  span {
+    font-size: 1.1rem;
+    margin-left: 0.7em;
+    font-weight: normal;
+  }
+}
+
+.box__catch {
+  margin-bottom: 2.1rem;
+}
+
+.box__button {
+  @extend .button;
+}
+
+.box__list {
+  line-height: 1.35em;
 }
