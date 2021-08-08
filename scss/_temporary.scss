@@ -8,3 +8,14 @@ body {
   width: 310px;
   margin: 72px auto;
 }
+
+@media screen and(min-width:600px) {
+  body {
+    // width: 100%;
+    margin: 72px;
+  }
+
+  .component-container {
+    width: 635px;
+  }
+}

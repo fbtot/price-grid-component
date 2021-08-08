@@ -49,6 +49,7 @@ li {
   border-radius: 0.3rem;
   box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.25);
   font-size: 1.1rem;
+  transition: background 0.1s ease-in-out;
 
   &:hover {
     background: darken($bright-yellow, 7%);
