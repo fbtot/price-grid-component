@@ -130,6 +130,7 @@ li {
 
 .box__button {
   @extend .button;
+  width: 100%;
 }
 
 .box__list {

@@ -134,6 +134,10 @@ h2 {
   margin-bottom: 2.1rem;
 }
 
+.box__button {
+  width: 100%;
+}
+
 .box__list {
   line-height: 1.35em;
 }
@@ -146,6 +150,15 @@ h2 {
   h2 {
     font-size: 1.5rem;
     margin-bottom: 1em;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    letter-spacing: -0.03em;
+  }
+
+  .button, .box__button {
+    font-size: 1rem;
   }
 
   .component-container {
@@ -157,7 +170,8 @@ h2 {
     flex: 0 0 50%;
   }
 
-  .box, .box--darker, .box--dark, .box--light {
+  .box, .box--dark,
+.box--darker, .box--light {
     padding: 1.2rem 3.2rem 1.2rem 2.5rem;
   }
 
@@ -165,12 +179,9 @@ h2 {
     margin-bottom: 1.1rem;
   }
 
-  .box--dark {
-    padding-top: 1.4rem;
-  }
-
-  .box--darker {
-    padding-top: 1.4rem;
+  .box--dark,
+.box--darker {
+    padding: 1.4rem 2.5rem 2.3rem;
   }
 
   .box__subtitle {
@@ -179,6 +190,24 @@ h2 {
 
   .box__content {
     letter-spacing: 0.01em;
+  }
+
+  .box__title--light {
+    margin-bottom: 1em;
+  }
+
+  .box__price {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .box__catch {
+    margin-bottom: 1.8rem;
+  }
+
+  .box__list {
+    font-size: 0.85rem;
+    line-height: 1.45em;
   }
 }
 
